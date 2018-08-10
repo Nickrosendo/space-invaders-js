@@ -18,9 +18,6 @@ var aliens = {
 
 function start() {
   document.addEventListener('keydown', move, false)
-  setInterval(function() {
-    timer++
-  }, 1000)
   alienShot(aliens[1])
   shipShot()
   alien1Move()
