@@ -1,0 +1,33 @@
+{
+  "name": "space-invaders",
+  "version": "1.0.0",
+  "description": "A space invaders multiplayer game made in node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nickrosendo/space-invaders-js.git"
+  },
+  "keywords": [
+    "space-invaders",
+    "node",
+    "canvas",
+    "websockets"
+  ],
+  "author": "Nicolas Rosendo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nickrosendo/space-invaders-js/issues"
+  },
+  "homepage": "https://github.com/Nickrosendo/space-invaders-js#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}

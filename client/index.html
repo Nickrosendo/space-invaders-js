@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="static/game.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="game-header">
+      <h1 class="game-title">Space Invaders Js</h1>
+      <div class="button-group">
+        <button onclick="start()">
+          Start
+        </button>
+        <button onclick="reset()">
+          Reset
+        </button>
+        <!-- <button>
+                Score
+            </button> -->
+      </div>
+    </header>
+    <div class="game-map">
+      <div id="alien1" class="alien-1">
+        <div id="alien1-shot" class="alien-1-shot"></div>
+      </div>
+      <div id="ship" class="ship">
+        <div id="ship-shot" class="ship-shot"></div>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./game.js"></script>
+    <script>
+      var socket = io();
+    </script>
+  </body>
+</html>
