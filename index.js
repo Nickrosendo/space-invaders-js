@@ -22,6 +22,11 @@ socket.on("connection", socket => {
   socket.on('ship-move', (direction) => {
     console.log('ship move to: '+ direction);
     socket.broadcast.emit('ship-move', direction);
+  });
+
+  socket.on('ship-bullet', () => {
+    console.log('ship shoot');
+    socket.broadcast.emit('ship-bullet');
   })
 });
 
